@@ -76,9 +76,9 @@ public class Engine extends MyList {
             message.setFrom(new InternetAddress("nospam@nospam.com"));
             message.setRecipients(Message.RecipientType.TO,
                     InternetAddress.parse("nospam@nospam.com"));
-            message.setSubject("Напоминание про День Рождение!");
-            message.setText("Привет Лёня не забудь поздравить," +
-                    "\n\n Сегодня праздник у "+name+" "+surName+"!");
+            message.setSubject("BirthDay reminder!");
+            message.setText("Hi friend remember that," +
+                    "\n\n Today is "+name+"+" "+surName+"+" birthday"!");
 
             Transport.send(message);
 
